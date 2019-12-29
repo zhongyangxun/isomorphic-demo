@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+</head>
+<body>
+  <div id="root"><%- appHtml %></div>
+  <script>
+    var DEHYDRATED_STATE = <%- dehydratedState %>
+  </script>
+  <script src="<%= assetManifest['entrypoints'][0] %>"></script>
+  <script src="<%= assetManifest['entrypoints'][1] %>"></script>
+  <script src="<%= assetManifest['entrypoints'][2] %>"></script>
+</body>
+</html>
